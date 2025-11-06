@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="#252525"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/phonecontact"
+            android:layout_width="50dp"
+            android:id="@+id/User_Image"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/img"
+            android:layout_gravity="center_vertical|center_horizontal"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:minHeight="48dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp"
+
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorAccent"
+            tools:text="Harshit Rastogi"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Layout_Action_Btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <Button
+            android:background="@drawable/reject_btn_background"
+            android:id="@+id/button_reject"
+android:paddingLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_call_end_white_24"
+            android:text="Reject"
+
+            android:textColor="@color/white"/>
+
+<!--        <Button-->
+<!--            android:background="@drawable/message_btn_background"-->
+<!--            android:id="@+id/buttonmessage"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            android:layout_width="0dip"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_send_24"-->
+<!--            android:text="Message"-->
+<!--            android:textColor="@color/grey_color"/>-->
+
+        <Button
+            android:id="@+id/button_accept"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/drawables"
+            android:drawableLeft="@drawable/ic_baseline_call_white_24"
+            android:paddingLeft="10dp"
+            android:text="Accept"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

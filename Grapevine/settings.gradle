@@ -1,0 +1,9 @@
+//include ':ftpclient'
+
+include ':app'
+include ':otptextview'
+//include ':pickphotoview'
+include ':mediapicker',':multicontactpicker' ,':videocompressor'
+
+include ':materialsearchview'
+include ':OneDriveSDK'

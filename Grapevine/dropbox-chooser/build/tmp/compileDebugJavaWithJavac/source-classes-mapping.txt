@@ -1,0 +1,18 @@
+com/dropbox/chooser/android/BuildConfig.java
+ com.dropbox.chooser.android.BuildConfig
+com/dropbox/chooser/android/AppStoreInterstitial.java
+ com.dropbox.chooser.android.AppStoreInterstitial
+ com.dropbox.chooser.android.AppStoreInterstitial$NativeFragment
+ com.dropbox.chooser.android.AppStoreInterstitial$NativeFragment$1
+ com.dropbox.chooser.android.AppStoreInterstitial$NativeFragment$2
+ com.dropbox.chooser.android.AppStoreInterstitial$SupportFragment
+ com.dropbox.chooser.android.AppStoreInterstitial$SupportFragment$1
+ com.dropbox.chooser.android.AppStoreInterstitial$SupportFragment$2
+com/dropbox/chooser/android/ActivityLike.java
+ com.dropbox.chooser.android.ActivityLike
+com/dropbox/chooser/android/DbxChooser.java
+ com.dropbox.chooser.android.DbxChooser
+ com.dropbox.chooser.android.DbxChooser$1
+ com.dropbox.chooser.android.DbxChooser$2
+ com.dropbox.chooser.android.DbxChooser$Result
+ com.dropbox.chooser.android.DbxChooser$ResultType

@@ -1,0 +1,49 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:24:1-38:12
+INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:24:1-38:12
+INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:24:1-38:12
+INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:24:1-38:12
+INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:24:1-38:12
+INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:24:1-38:12
+INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:24:1-38:12
+	package
+		ADDED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:24:11-49
+		INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+		INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+		ADDED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:24:1-38:12
+		INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+		ADDED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:24:1-38:12
+		INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:25:11-69
+uses-permission#android.permission.INTERNET
+ADDED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:27:5-66
+	android:name
+		ADDED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:27:22-64
+application
+ADDED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:29:5-36:19
+activity#com.spotify.sdk.android.auth.LoginActivity
+ADDED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:31:9-34:20
+	android:theme
+		ADDED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:33:13-72
+	android:name
+		ADDED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:32:13-70
+uses-sdk
+INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+		ADDED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+		INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+		ADDED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+		INJECTED from E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml

@@ -1,0 +1,48 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3    Copyright (c) 2015-2016 Spotify AB
+4
+5    Licensed to the Apache Software Foundation (ASF) under one
+6    or more contributor license agreements.  See the NOTICE file
+7    distributed with this work for additional information
+8    regarding copyright ownership.  The ASF licenses this file
+9    to you under the Apache License, Version 2.0 (the
+10    "License"); you may not use this file except in compliance
+11    with the License.  You may obtain a copy of the License at
+12
+13    http://www.apache.org/licenses/LICENSE-2.0
+14
+15    Unless required by applicable law or agreed to in writing,
+16    software distributed under the License is distributed on an
+17    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+18    KIND, either express or implied.  See the License for the
+19    specific language governing permissions and limitations
+20    under the License.
+21-->
+22<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+23    package="com.spotify.sdk.android.auth"
+24    android:versionCode="2"
+25    android:versionName="1.2.3" >
+26
+27    <uses-sdk
+28        android:minSdkVersion="16"
+28-->E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+29        android:targetSdkVersion="28" />
+29-->E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml
+30
+31    <uses-permission android:name="android.permission.INTERNET" />
+31-->E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:27:5-66
+31-->E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:27:22-64
+32
+33    <application>
+33-->E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:29:5-36:19
+34        <activity
+34-->E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:31:9-34:20
+35            android:name="com.spotify.sdk.android.auth.LoginActivity"
+35-->E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:32:13-70
+36            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+36-->E:\Office Projects\Grapevine12June2020\Grapevine30Mar2020\Grapevine\auth-lib\src\main\AndroidManifest.xml:33:13-72
+37        </activity>
+38    </application>
+39
+40</manifest>

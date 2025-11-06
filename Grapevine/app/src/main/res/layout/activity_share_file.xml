@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".oxyzenrental.ShareActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grapevinesplash"
+        />
+    <!--<ImageView-->
+    <!--android:id="@+id/splashscreen"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:src="@drawable/splash"/>-->
+    <!--<ProgressBar-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginBottom="25dp"-->
+    <!--android:indeterminateTint="#fff"/>-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Loading..."-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="#fff"-->
+    <!--android:paddingLeft="7dp"-->
+    <!--android:layout_alignParentBottom="true"/>-->
+
+
+    <!-- <ImageView
+         android:id="@+id/imgLogo"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:src="@drawable/wwe_logo" />
+
+     <TextView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="10dp"
+         android:textSize="12dp"
+         android:textColor="#454545"
+         android:gravity="center_horizontal"
+         android:layout_alignParentBottom="true"
+         android:text="www.androidhive.info" />-->
+
+</LinearLayout>

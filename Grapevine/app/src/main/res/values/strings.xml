@@ -1,0 +1,103 @@
+<resources>
+<!--    <string name="asset_statements">-->
+<!--  [{-->
+<!--    \"relation\": [\"delegate_permission/common.handle_all_urls\"],-->
+<!--    \"target\": {-->
+<!--      \"namespace\": \"web\",-->
+<!--      \"site\": \"https://www.grapevine.work\"-->
+<!--    }-->
+<!--  }]-->
+<!--</string>-->
+    <string name="google_client_id">261542935799-o9gsbeadjbnv0mf5ko4m6fuifmasilqd.apps.googleusercontent.com</string>
+    <string name="app_name">Grapevine</string>
+    <string name="permission_message">This sample app uses camera.</string>
+    <string name="confirmation">This web page wants to use following resources:\n\n%s</string>
+    <string name="allow">Allow</string>
+    <string name="deny">Deny</string>
+    <string name="select_folder">Select a folder</string>
+    <string name="query_failed">Problem while retrieving files.</string>
+    <string name="content_updated">Successfully edited contents.</string>
+    <string name="content_update_failed">Error while editing contents.</string>
+    <string name="file_not_selected">No file selected, can not continue.</string>
+    <string name="content_loaded">File contents successfully read.</string>
+    <string name="read_failed">Error while retrieving file.</string>
+    <string name="recording">Recording</string>
+    <string name="runtime_permissions_txt">Please enable ALL permissions from app settings.</string>
+
+    <string name="sendotp_key">309610AW1BkNULe5e005d39P1</string>
+    <string name="enterphonenumber">Enter your phone number</string>
+    <string name="selectcountry">Select country</string>
+    <string name="sending_sms">We\'re sending an sms to</string>
+    <string name="inprogress">Verification in\nprogress</string>
+    <string name="verified">Verification successful</string>
+    <string name="failed">Verification failed</string>
+    <string name="entercode">Please enter the code you received</string>
+    <string name="enter_mob_no_btn"><u>Change Mobile No</u></string>
+    <string name="skip_btn"><u>Skip</u></string>
+    <string name="Resend_via_call"><u>Resend OTP()</u></string>
+    <string name="notification_channel_id">fcm_default_channel</string>
+    <string name="contact_permission"> We use your phone contact data only for the limited purpose of inviting the contacts to the app as your friend. If you agree to this only then allow the permission to access contacts.</string>
+    <string name="privacypolicy">By entering mobile/email here and asking OTP for sign in, you agree with our <b><u><a href="https://app.getterms.io/view/uPWxJ/privacy/en-us">Privacy policy</a></u></b> and <b><u><a href="https://www.iubenda.com/privacy-policy/47438785/cookie-policy">Cookies Policy</a></u></b>. Learn more on how we process your data by clicking the links.</string>
+    <string name="socialprivacypolicy">By clicking Log in, you agree with our Terms. Learn how we process your data in our <b><u><a href="https://app.getterms.io/view/uPWxJ/privacy/en-us">Privacy policy</a></u></b> and <b><u><a href="https://www.iubenda.com/privacy-policy/47438785/cookie-policy">Cookies Policy</a></u></b>.</string>
+    <string name="duplicate_account">This account is active in other device(s). You will be logged out from all other devices and continued with this device. Proceed ?</string>
+    <string name="video_encode_config_h_264_avc">Video Encode Config (H.264 AVC)</string>
+    <string name="video_encoder">Video Encoder</string>
+    <string name="resolution">Resolution</string>
+    <string name="bitrate">Bitrate (kbps)</string>
+    <string name="frame_rate">Frame Rate (fps)</string>
+    <string name="frame_interval">I-Frame Interval</string>
+    <string name="avc_profle">AVCProfile</string>
+    <string name="orientation">Orientation</string>
+    <string name="audio_encode_config_h_264_aac">Audio Encode Config (H.264 AAC)</string>
+    <string name="audio_encoder">Audio Encoder</string>
+    <string name="channels">Channels</string>
+    <string name="sample_rate">Sample Rate (HZ)</string>
+    <string name="aac_profile">AAC Profile</string>
+    <string name="without_audio">Without Audio</string>
+    <string name="with_audio">With Audio</string>
+    <string name="start_recorder">Start Recorder</string>
+    <string name="stop_recorder">Stop Recorder</string>
+    <string name="restart_recorder">Restart recorder</string>
+    <string name="no_permission">No Permission!</string>
+    <string name="no_permission_to_write_sd_ard">No permission to write sd card</string>
+    <string name="permission_denied_screen_recorder_cancel">Permission denied! Screen recorder is cancel</string>
+    <string name="using_your_mic_to_record_audio">Using your mic to record audio and your sd card to save video file</string>
+    <string name="codec_unsupported_size_with_framerate">codec \'%s\' unsupported size %dx%d(%s) with framerate %d</string>
+    <string name="codec_unsupported_size">codec \'%s\' unsupported size %dx%d (%s)</string>
+    <string name="codec_unsupported_bitrate">codec \'%s\' unsupported bitrate %d</string>
+    <string name="codec_unsupported_with_framerate">codec \'%s\' unsupported framerate %d</string>
+    <string name="recorder_stopped_saved_file">Recorder stopped!  Saved file</string>
+    <string name="length_video">Length:</string>
+    <string name="gravando">Recording...</string>
+    <string name="stop">Stop</string>
+    <string name="create_screenRecorder_failure">Create ScreenRecorder failure</string>
+    <string name="title_activity_phone_call_listener">PhoneCallListener</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_service_receiver">ServiceReceiver</string>
+
+    <string name="selection_limiter_pix">Can\'t select more than %d items.</string>
+    <string name="pix_bottom_message_without_video">Drag images up for gallery</string>
+    <string name="pix_bottom_message_with_only_video">Drag videos up for gallery</string>
+    <string name="pix_bottom_message_with_video">Hold for video, tap for photo</string>
+    <string name="pix_ok">OK</string>
+    <string name="pix_tap_to_select">Tap photo to select</string>
+    <string name="pix_selected">Selected</string>
+    <string name="pix_recent">Recent</string>
+    <string name="pix_last_month">Last Month</string>
+    <string name="pix_last_week">Last Week</string>
+    <string name="cannot_click_image_pix">Can not add more than %s images</string>
+    <string name="action_settings">Settings</string>
+    <string name="txt_done">Done</string>
+    <string name="txt_search">Search</string>
+    <string name="partnerKey">0QA20bfa3040d01f04cfca2a10c3438b68d8e</string>
+    <string name="facebook_app_id">860265559611233</string>
+    <string name="fb_login_protocol_scheme">fb860265559611233</string>
+    <string name="facebook_client_token">c5d233f3bf904340024fc9bc237bebdf</string>
+
+<!--    <string name="facebook_app_id">860265559611233</string>-->
+<!--    <string name="fb_login_protocol_scheme">fb484196815652970</string>-->
+</resources>

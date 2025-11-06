@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "261542935799",
+    "project_id": "grapevine-ad8f2",
+    "storage_bucket": "grapevine-ad8f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261542935799:android:3e0bb7ba4a15bc8e9da7f2",
+        "android_client_info": {
+          "package_name": "com.oxyzenhomes.grapevine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261542935799-02kjuardha31jag5rmjdvhotfluv7i70.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKrHUrkd7_HLEQv8xGapJB-DvYpWT_ggQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261542935799-02kjuardha31jag5rmjdvhotfluv7i70.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffed00"
+    android:padding="20dp"
+    >
+
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Verify"
+        android:textColor="#229539"
+        android:textSize="50dp"
+        android:padding="20dp"
+        android:gravity="center"
+        />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+         >
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             >
+
+
+
+            <Button
+                android:id="@+id/ChangeMobile"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Change Email"
+                android:textColor="#229539"
+                android:textSize="22dp"
+                android:gravity="left"
+                android:background="#ffed00"
+                android:textAllCaps="false"
+                android:layout_column="1"
+                />
+
+            <Button
+                android:id="@+id/SkipToIndex"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/skip_btn"
+                android:textColor="#299539"
+                android:textSize="22dp"
+                android:gravity="right"
+                android:background="#ffed00"
+                android:textAllCaps="false"
+                android:textColorHighlight="#fcd024"
+                android:layout_column="2"
+                android:layout_weight="1"
+                />
+        </TableRow>
+        <TableRow
+
+
+            />
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+           android:layout_marginTop="20dp"
+
+          >
+
+            <EditText
+android:id="@+id/phoneNumber1"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_column="1"
+                android:textColor="#000"
+                android:background="#fff"
+                android:hint="xxxxxxxxxx"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="20dp"
+
+                android:layout_gravity="center_vertical"
+
+                />
+             <Button
+                android:id="@+id/ResendOTP"
+                android:layout_height="60dp"
+              android:layout_width="wrap_content"
+                android:layout_column="2"
+                android:background="#299539"
+                android:textColor="#ffed00"
+                android:text="Resend OTP"
+                android:textSize="20dp"
+                 android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                />
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+          android:layout_marginTop="20dp"
+
+
+
+            >
+
+            <EditText
+                android:id="@+id/inputCode"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_column="1"
+                android:textColor="#000"
+                android:background="#fff"
+                android:hint="Enter OTP"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+
+                />
+            <Button
+                android:id="@+id/codeInputButton"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_column="1"
+                android:background="#229539"
+                android:textColor="#ffed00"
+                android:text="Submit"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+                android:textAllCaps="false"
+
+                />
+
+
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+
+
+
+
+</LinearLayout>

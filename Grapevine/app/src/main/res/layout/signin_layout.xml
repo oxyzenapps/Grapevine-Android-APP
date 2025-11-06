@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="100dp"
+        tools:ignore="MissingConstraints">
+<!--        <Button-->
+<!--            android:id="@+id/SkipToIndex"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_gravity="right"-->
+
+<!--            android:background="#fff"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/skip_btn"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="#000"-->
+<!--            android:textColorHighlight="#fcd024"-->
+<!--            android:textSize="20dp" />-->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/grapevine_logo">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="70dp"
+
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/smsVerificationButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+<androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0dp"
+
+
+    android:src="@drawable/registration">
+
+</androidx.appcompat.widget.AppCompatImageView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="90dp"
+            android:text="Mobile OTP verification"
+            android:textSize="30dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Enter your mobile number to receive a verification code"
+        android:textSize="18dp"
+        android:textColor="#000000"
+
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+
+        android:inputType="number"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/smsVerificationButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="Send OTP"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumber"
+        android:onClick="onButtonClicked"/>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+
+       app:layout_constraintTop_toBottomOf="@+id/smsVerificationButton"
+       app:layout_constraintVertical_bias="0.093"
+
+       tools:ignore="MissingConstraints">
+       <TableLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+
+           android:gravity="center_vertical"
+           tools:ignore="MissingConstraints">
+           <TableRow
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:orientation="vertical"
+               android:layout_marginTop="20dp"
+               >
+               <androidx.appcompat.widget.AppCompatCheckBox
+                   android:id="@+id/PrivacyCheck"
+                   android:layout_marginTop="10dp"
+                   android:theme="@style/WhiteCheck">
+
+               </androidx.appcompat.widget.AppCompatCheckBox>
+
+
+               <TextView
+                   android:id="@+id/privacyPolicy"
+                   android:layout_width="wrap_content"
+
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:paddingLeft="5dp"
+                   android:paddingRight="5dp"
+                   android:text="@string/privacypolicy"
+                   android:textAlignment="center"
+                   android:textColor="#0036b6"
+                   android:textColorLink="#0036b6"
+                   android:textSize="15dp">
+
+               </TextView>
+           </TableRow>
+
+       </TableLayout>
+   </LinearLayout>
+<!--    <androidx.appcompat.widget.AppCompatCheckBox-->
+
+<!--        android:id="@+id/PrivacyCheck"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:theme="@style/WhiteCheck"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button"-->
+
+<!--        android:layout_marginBottom="0dp"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--    </androidx.appcompat.widget.AppCompatCheckBox>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/privacyPolicy"-->
+<!--        android:layout_width="wrap_content"-->
+
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:layout_marginBottom="4dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:gravity="center"-->
+<!--        android:paddingLeft="20dp"-->
+<!--        android:paddingRight="5dp"-->
+<!--        android:text="@string/privacypolicy"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#0036b6"-->
+<!--        android:textColorLink="#0036b6"-->
+<!--        android:textSize="15dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--    </TextView>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
