@@ -716,8 +716,8 @@ if(!phoneNumber.contains("@")){
 
         UpdateToken("", token,AndroidID,phoneNumber);
         appPreferences.setSessionCount("LoginVerified");
-        startActivity(new Intent(SendOTPMSG91.this, HomeActivity.class));
-        finish();
+        showVersionPopUp();
+
     }
     else
     {
@@ -750,6 +750,43 @@ if(!phoneNumber.contains("@")){
         return String.format("%06d", number);
     }
 
+     public void showVersionPopUp(){
+         final Dialog dialog = new Dialog(SendOTPMSG91.this);
+         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+         dialog.setCancelable(false);
+         dialog.setContentView(R.layout.new_app_permission);
+         WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
+         layoutParams.copyFrom(dialog.getWindow().getAttributes());
+         layoutParams.width = WindowManager.LayoutParams.MATCH_PARENT;
+         layoutParams.height = WindowManager.LayoutParams.WRAP_CONTENT;
+         dialog.getWindow().setAttributes(layoutParams);
+
+         Button btnOld = dialog.findViewById(R.id.btnOld);
+         Button btnNew = dialog.findViewById(R.id.btnNew);
+
+         btnOld.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 appPreferences.setAppVersionType("Old");
+                 dialog.dismiss();
+                 startActivity(new Intent(SendOTPMSG91.this, HomeActivity.class));
+                 finish();
+
+             }
+         });
+
+         btnNew.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 appPreferences.setAppVersionType("New");
+                 dialog.dismiss();
+                 startActivity(new Intent(SendOTPMSG91.this, HomeActivity.class));
+                 finish();
+
+             }
+         });
+         dialog.show();
+     }
     public void UpdateToken(String applicantid,String TokenID,String AndroidID,String MobileNo) {
 
 

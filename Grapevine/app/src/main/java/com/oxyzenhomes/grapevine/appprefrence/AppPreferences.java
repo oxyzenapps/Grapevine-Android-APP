@@ -69,10 +69,18 @@ public class AppPreferences  {
         AgentMode,
         FilterOnFeedChannelID,
         CRMActivityChannelID,
-        EntityFeedChannelID
+        EntityFeedChannelID,
+        AppVersionType
 
     }
 
+    public void setAppVersionType(String Value) {
+        mEditor.putString(SharedPrefrencesKey.AppVersionType.toString(), Value);
+        mEditor.commit();
+    }
+    public String getAppVersionType() {
+        return mPreferences.getString(SharedPrefrencesKey.AppVersionType.toString(), "");
+    }
     public void setAgentMode(String Value) {
         mEditor.putString(SharedPrefrencesKey.AgentMode.toString(), Value);
         mEditor.commit();

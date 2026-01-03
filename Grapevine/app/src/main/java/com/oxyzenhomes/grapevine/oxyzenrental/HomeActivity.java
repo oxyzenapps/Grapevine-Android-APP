@@ -1082,7 +1082,19 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.C
 //
 //                                }
 //                                else{
+                                String appVersionType = appPreferences.getAppVersionType();
+                                if(appVersionType.equals("Old")){
                                     webView.loadUrl("https://www.grapevine.work/workplace/userlogin?email_id=" + stuId.replace("+91", "") + "&OTP=" + UserOtp + "&type=" + SourceChannel + "&UserName=" + Name + "&ChannelId=" + ChannelId + "&Longitude=" + Longitude + "&Latitude=" + Latitude + "&DeviceID=" + token + "&AndroidID=" + AndroidID + "&DeviceOS=Android");
+                                }
+                                else{
+                                    webView.getSettings().setJavaScriptEnabled(true);
+                                    // Add JavaScript interface
+                                    webView.addJavascriptInterface(new WebAppInterface(this), "AndroidBridge");
+
+                                    webView.loadUrl("https://gv.grapevine.work/");
+
+                                }
+
                                 //}
 
                             }
@@ -1124,6 +1136,7 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.C
                 appPreferences.setGoogleAppId("");
                 appPreferences.setSessionCount("SendOtp");
                 appPreferences.setUserOTP("");
+                appPreferences.setAppVersionType("");
                 AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
                 builder.setMessage("OTP Verified Successfully.Please Wait...")
                         .setCancelable(false);
@@ -3709,6 +3722,15 @@ Boolean Read_Contacts=check_permission(6);
                     CookieSyncManager.getInstance().sync();
                     findViewById(R.id.msw_welcome).setVisibility(View.GONE);
                     findViewById(R.id.activity_main_webview).setVisibility(View.VISIBLE);
+                    //webView.postDelayed(() -> sendLoginToWeb(stuId.replace("+91", ""), "+91"), 5000);
+
+                    if (url.contains("/auth") || url.endsWith("/") || url.contains("login")) {
+                        if (stuId != null && !stuId.isEmpty()) {
+                            sendLoginToWeb(stuId.replace("+91", ""), "+91", UserOtp);
+                            // Clear after sending to prevent re-sending on page refresh
+                            UserOtp = null;
+                        }
+                    }
 //                    if(view!=null && view.isShown()){
 //                        if(dialog.isShowing()){
 //                            dialog.dismiss();
@@ -3994,6 +4016,30 @@ Boolean Read_Contacts=check_permission(6);
 
         // ATTENTION: This was auto-generated to handle app links.
 
+    }
+
+    // Called after OTP verification succeeds
+    private void sendLoginToWeb(String pendingMobileNumber,String pendingCountryCode,String UserOtp) {
+        try {
+            if(UserOtp == null || UserOtp.equals("") || UserOtp.isEmpty()){
+                UserOtp = "123456";
+            }
+            JSONObject authPayload = new JSONObject();
+            authPayload.put("mobileNumber", pendingMobileNumber);
+            authPayload.put("countryCode", pendingCountryCode);
+            authPayload.put("otpVerified", true);
+            authPayload.put("otp",UserOtp);
+
+            String script = "if(window.onNativeLogin) { window.onNativeLogin('" +
+                    authPayload.toString().replace("'", "\\'") + "'); }";
+
+            webView.evaluateJavascript(script, null);
+
+            pendingMobileNumber = null;
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 
     public void CreateUserContact(JSONObject object){

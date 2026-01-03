@@ -37,6 +37,8 @@
     <string name="Resend_via_call"><u>Resend OTP()</u></string>
     <string name="notification_channel_id">fcm_default_channel</string>
     <string name="contact_permission"> We use your phone contact data only for the limited purpose of inviting the contacts to the app as your friend. If you agree to this only then allow the permission to access contacts.</string>
+    <string name="new_app_permission"> We’ve updated our application!
+You can continue with the new version for the latest features and improvements, or switch back to the old version if you prefer.</string>
     <string name="privacypolicy">By entering mobile/email here and asking OTP for sign in, you agree with our <b><u><a href="https://app.getterms.io/view/uPWxJ/privacy/en-us">Privacy policy</a></u></b> and <b><u><a href="https://www.iubenda.com/privacy-policy/47438785/cookie-policy">Cookies Policy</a></u></b>. Learn more on how we process your data by clicking the links.</string>
     <string name="socialprivacypolicy">By clicking Log in, you agree with our Terms. Learn how we process your data in our <b><u><a href="https://app.getterms.io/view/uPWxJ/privacy/en-us">Privacy policy</a></u></b> and <b><u><a href="https://www.iubenda.com/privacy-policy/47438785/cookie-policy">Cookies Policy</a></u></b>.</string>
     <string name="duplicate_account">This account is active in other device(s). You will be logged out from all other devices and continued with this device. Proceed ?</string>

@@ -62,7 +62,7 @@ public class VersionChecker extends AsyncTask<Void, String, String> {
         super.onPostExecute(onlineVersion);
         appPreferences=new AppPreferences(mContext);
         if (onlineVersion != null && !onlineVersion.isEmpty()) {
-            if (Float.valueOf("10.124") < Float.valueOf(onlineVersion)) {
+            if (Float.valueOf("10.125") < Float.valueOf(onlineVersion)) {
                 AlertDialog ad = new AlertDialog.Builder(mContext).create();
                 //ad.setCancelable(false); // This blocks the 'BACK' button
                 ad.setMessage("Latest update available, Upgrade now?.");

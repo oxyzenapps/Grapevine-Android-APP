@@ -2,6 +2,7 @@ package com.oxyzenhomes.grapevine.oxyzenrental;
 
 import android.Manifest;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.ContentValues;
 import android.content.Context;
@@ -17,6 +18,7 @@ import android.provider.Settings;
 import android.text.format.Formatter;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -408,6 +410,39 @@ public class VerificationActivity extends AppCompatActivity implements
 //        }
     }
 
+    public void showVersionPopUp(){
+        final Dialog dialog = new Dialog(VerificationActivity.this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCancelable(false);
+        dialog.setContentView(R.layout.new_app_permission);
+        WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
+        layoutParams.copyFrom(dialog.getWindow().getAttributes());
+        layoutParams.width = WindowManager.LayoutParams.MATCH_PARENT;
+        layoutParams.height = WindowManager.LayoutParams.WRAP_CONTENT;
+        dialog.getWindow().setAttributes(layoutParams);
+
+        Button btnOld = dialog.findViewById(R.id.btnOld);
+        Button btnNew = dialog.findViewById(R.id.btnNew);
+
+        btnOld.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                appPreferences.setAppVersionType("Old");
+                dialog.dismiss();
+
+            }
+        });
+
+        btnNew.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                appPreferences.setAppVersionType("New");
+                dialog.dismiss();
+
+            }
+        });
+        dialog.show();
+    }
     public void onVerified(){
         enableInputField(false);
         Log.d(TAG, "Verified!\n");
@@ -493,6 +528,7 @@ public class VerificationActivity extends AppCompatActivity implements
         appPreferences.setimagePath(Name);
 
         appPreferences.setSessionCount("LoginVerified");
+        showVersionPopUp();
         startActivity(new Intent(VerificationActivity.this, HomeActivity.class));
         finish();
     }
